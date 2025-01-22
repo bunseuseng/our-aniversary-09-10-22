@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/a14ae32021.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>This one is for my Babe Ouksa!!</title>
+
+    <style type="text/css">
+      @font-face {
+        font-family: digit;
+        src: url("digital-7_mono.ttf") format("truetype");
+      }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+  </head>
+
+  <body>
+    <div id="mainDiv">
+      <div id="content">
+        <div id="code">
+          <span class="comments">/**</span><br />
+          <span class="space" /><span class="comments"
+            >*A Letter to the Love of My Life 💗</span
+          ><br />
+          <span class="space" /><span class="comments">*/</span><br />
+          Dear StarrySky,✨<br />
+          I want to tell you something else that I never told you before 🫣<br />
+          <span class="comments"
+            >// You know, being apart from you only makes me realize how much
+            you mean to me🥹💗</span
+          ><br />
+          Sometimes, I sit and think about how far we’ve come and how much we’ve
+          been through together👩‍❤️‍👨✨;<br />
+          <span class="comments">// Your face Your Voice Your Words.</span
+          ><br />
+          Our story isn’t just about 💕🙆🏻‍♂️ it’s about perseverance, forgiveness,
+          and the unshakable belief that what we have is worth fighting
+          for🤺✨<br />
+          Being apart from you is so hard🙇🏻‍♂️ The days feel incomplete without
+          you🙁but even through the distance, your voice and presence remind me
+          why I fell in love with you😘🌷<br />
+          We’ve had our share of arguments and misunderstandings, and those
+          moments weren’t easy🥲But what I value most is how we always find our
+          way back, choosing forgiveness and letting love guide us through🥹💗<br />
+          I want you to know😒💗that no matter how far apart we are or how
+          difficult things may seem😉 my heart will always be with you🥺💗 You
+          are my strength, my happiness, and my home😝💗✨<br />
+          I dream of the day we close the distance and no longer count the days
+          to see each other😶‍🌫️ Until then, I’ll keep fighting for us because
+          you’re worth it—all of it😾💗🌷<br />
+          There have been fights ;<br />
+          <span class="comments">// And I'm sure there will be more.</span
+          ><br />
+          But our Bond will always grow back Stronger;<br />
+          <br />
+          <br />
+          All I want to say is:<br />
+          Babe, I will love you for the rest of my life😾💗<br />
+          <br />
+          <br />
+          Now If you miss me you can touch the heart below!!<br />
+          <br />
+          <span id="heartspan">
+            <a href="image.jpg"><i class="fas fa-heart" id="icon"></i></a>
+          </span>
+        </div>
+        <div id="loveHeart">
+          <canvas id="garden"></canvas>
+          <div id="words">
+            <div id="messages">
+              Been Together for:<br />
+              <div id="elapseClock"></div>
+            </div>
+            <div id="loveu">
+              I Luv U sm Ouksa!!<br />
+              <div class="signature">~Bunseu~</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript">
+      var offsetX = $("#loveHeart").width() / 2;
+      var offsetY = $("#loveHeart").height() / 2 - 55;
+      var together = new Date();
+      together.setFullYear(2022, 10, 9);
+      together.setHours(16);
+      together.setMinutes(30);
+      together.setSeconds(0);
+      together.setMilliseconds(0);
+
+      if (!document.createElement("canvas").getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML =
+          "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none");
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+      } else {
+        setTimeout(function () {
+          startHeartAnimation();
+        }, 5000);
+
+        timeElapse(together);
+        setInterval(function () {
+          timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+      }
+    </script>
+  </body>
+</html>
